@@ -13,7 +13,7 @@ body{
   background-color: aliceblue;
   background:no-repeat linear-gradient(to right, steelblue, pink, lightblue);
   background-size: cover;
-  padding-top: 9vh;
+  padding-top: 5vh;
   justify-content: center;
   display: flex;
   align-items: center;
