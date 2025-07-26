@@ -4,13 +4,16 @@
   box-sizing: border-box;
 }
 
-.container{
-  padding-top: 5vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.container {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-top: 5vh;
+  justify-items: center; 
+  align-items: center; 
+  max-width: 1200px;
 }
+
 
 body{
   min-height: 100vh;
@@ -26,12 +29,13 @@ body{
 }
 
 
+
 @media screen and (max-width: 1024px){
+
   .container{
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-  } 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-height: 1024px) and (min-aspect-ratio: 6/3) {
